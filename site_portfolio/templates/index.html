@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Portfolio da Luísa</title>
+</head>
+<body>
+  <h1>Meu Portfolio</h1>
+
+  <h3>Meus Conhecimentos</h3>
+  {% for item in conhecimentos %}
+    <li>{{item}}</li>
+  {% endfor %}
+
+  <ul>
+    <h3>Endereço</h3>
+    <li>Cidade: São Paulo</li>
+    <li>País: Brasil</li>
+    <li>Planeta: Terra</li>
+ </ul>
+</body>
+</html>
